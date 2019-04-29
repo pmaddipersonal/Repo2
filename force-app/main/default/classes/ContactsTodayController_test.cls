@@ -5,7 +5,7 @@ public class ContactsTodayController_test {
     public static void TestContactsTodayController() {
         
         User u = [SELECT ID From User LIMIT 1];
-        
+        System.debug('');
         System.runAs(u) {
         
             Contact c = new Contact(FirstName = 'Joe', LastName = 'Test');
